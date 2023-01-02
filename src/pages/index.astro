@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="JimniLinux official">
+	<main>
+		<h1>Linux for Students - <span class="text-gradient">JimniLinux</span></h1>
+		<p class="instructions">
+			the project is in development and will be available in beta by July 2023. Thanks for visiting !
+			For updates and announcements, please follow us on <a href="https://github.com/JimniLinux">Github</a>
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://github.com/JimniLinux"
+				title="Source Code"
+				body="JimniLinux source code, including packages, kernel-patches, website source, etc are available at our Github repositories."
+			/>
+			<Card
+				href=""
+				title="About"
+				body="JimniLinux was founded by wiz64 as a linux distro designed exclusively for students focusing on a beautiful and distraction-free environment. "
+			/>
+			<Card
+				href="https://discord.gg/7Z8gf3kJXW"
+				title="Join Us"
+				body="Help us improve JimniLinux by becoming a beta-tester, developer, or designer. Everyone is welcome."
+			/>
+			<Card
+				href="https://discord.gg/7Z8gf3kJXW"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
