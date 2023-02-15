@@ -1,4 +1,4 @@
-# Welcome to JimniLinux website source code
+# Welcome to JimniOS website source code
 
 Powered by Astro | https://docs.astro.build
 
